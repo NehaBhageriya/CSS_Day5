@@ -1,0 +1,82 @@
+.container{
+    display: grid;
+    grid-template-columns: 100px 100px 100px ;
+    /* grid-template-columns: 50% 50%; */
+    grid-template-columns: 50% 30% 20%;
+    grid-template-columns: 1fr ; /*100%*/
+    grid-template-columns: 1fr 1fr;/*50% 50% */
+    /* grid-template-columns: repeat(8,1fr);it will used to gives the same fraction to multiple box at a time */
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 100px 100px 100px;
+    grid-row-gap: 5px;
+    grid-column-gap: 10px;
+    /* gap: ; */
+}
+
+
+.box1{
+    background-color: brown;
+    /* grid-column: 1/4;  we can give one more extra for last one or -1 */
+/* grid-row: 1/5; */
+}
+.box2{
+    background-color: green;
+}
+.box3{
+    background-color: red;
+}
+.box4{
+    background-color:orange;
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+.box5{
+    background-color:pink;
+    grid-column:1/2;
+    grid-row:3/4;
+}
+.box6{
+    background-color:yellow;
+}
+.box7{
+    background-color: blue;
+}
+.box8{
+    background-color: purple;
+}
+.box9{
+    background-color:skyblue;
+}
+.newcontainer{
+    display: grid;
+
+    grid-template-columns: 25% 50% 25%;
+    grid-template-rows: 25% 50% 25%;
+    grid-template-rows: 50px 300px 50px;
+    grid-gap: 25px;
+
+}
+
+.nbox1{
+    background-color: brown;
+    /* grid-column: 1/4;  we can give one more extra for last one or -1 */
+/* grid-row: 1/5; */
+grid-column: 1/4;
+/* height: 100px; */
+}
+.nbox2{
+    background-color: green;
+    
+
+}
+.nbox3{
+    background-color: red;
+}
+.nbox4{
+    background-color:orange;
+    
+}
+.nbox5{
+    background-color:pink;
+    grid-column: 1/4;
+}
